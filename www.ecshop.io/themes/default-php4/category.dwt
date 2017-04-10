@@ -1,0 +1,159 @@
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+	<!--//////////////////////////////////////////////////-->
+	<!--///////////////////Category Page//////////////////-->
+	<!--//////////////////////////////////////////////////-->
+	<div id="page-content" class="single-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+                               <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+
+<!--						<li><a href="index.html">Home</a></li>
+						<li><a href="goo#">Category : Mobile</a></li>-->
+					</ul>
+				</div>
+			</div>
+                    
+			<div class="row">
+				<div id="main-content" class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="products">
+                                                            <form name="compareForm" action="compare.php" method="post" onSubmit="return compareGoods(this);">
+
+                                                             <!--{foreach from=$goods_list item=goods}-->
+								<div class="col-lg-4 col-md-4 col-xs-12">
+									
+                                                                    
+                                                                    	<div class="product">
+										<div class="image"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" /></a></div>
+										<div class="buttons">
+											<a class="btn cart" href="javascript:addToCart({$goods.goods_id})"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+											<a class="btn wishlist" href="javascript:collect({$goods.goods_id})"><span class="glyphicon glyphicon-heart"></span></a>
+											<a class="btn compare" href="#"><span class="glyphicon glyphicon-transfer"></span></a>
+										</div>
+										<div class="caption">
+											<div class="name"><h3><a href="{$goods.url}">{$goods.goods_name}</a></h3></div>
+											<div class="price">{$goods.shop_price}<span>{$goods.market_price}</span></div>
+											<div class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></div>
+										</div>
+									</div>
+                                            
+								</div>
+                                                                <!--{/foreach}-->
+                                                                </form>
+							</div>
+						</div>
+					</div>
+			
+					<div class="row text-center">
+						<ul class="pagination">
+						  <li class="active"><a href="#">1</a></li>
+						  <li><a href="#">2</a></li>
+						  <li><a href="#">3</a></li>
+						  <li><a href="#">4</a></li>
+						  <li><a href="#">5</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="sidebar" class="col-md-4">
+					<div class="widget wid-categories">
+						<div class="heading"><h4>分类</h4></div>
+                                           <!--{foreach from=$categories item=cat}-->
+
+						<div class="content">
+							<ul>
+								<li><a href="{$cat.url}">{$cat.name|escape:html}</a></li>								
+							</ul>
+						</div>
+                                              <!--{/foreach}-->
+
+                                           
+					</div>
+					<div class="widget wid-type">
+						<div class="heading"><h4>TYPE</h4></div>
+						<div class="content">
+							<select>
+								<option value="EL" selected>Electronics</option>
+								<option value="MT">Mice and Trackballs</option>
+								<option value="WC">Web Cameras</option>
+								<option value="TA">Tablates</option>
+								<option value="AP">Audio Parts</option>
+							</select>
+						</div>
+					</div>
+					<div class="widget wid-discouts">
+						<div class="heading"><h4>价格</h4></div>
+                                                 <!--{foreach from=$price_grade item=grade}-->
+						<div class="content">
+                                                    <span>价格范围：</span>
+                                                     <a href="{$grade.url}">{$grade.price_range}</a> 
+						</div>
+                                                 
+                                                   <!--{/foreach}-->
+					</div>
+					<div class="widget wid-brand">
+						<div class="heading"><h4>牌子</h4></div>
+                                                 <!--{foreach from=$brands item=brand}-->
+						<div class="content">
+							<input type="checkbox" name="brand"><a href="{$brand.url}">{$brand.brand_name}</a> 					
+						</div>
+                                                  <!--{/foreach}-->
+					</div>
+					<div class="widget wid-product">
+						<div class="heading"><h4>最近浏览</h4></div>
+                                            
+						<div class="box" id='history_div'>
+                                                    <div class="box_1">
+<!--                                                     <h3><span>{$lang.view_history}</span></h3>-->
+                                                     <div class="boxCenterList clearfix" id='history_list'>
+                                                       {insert name='history'}
+                                                     </div>
+                                                    </div>
+                                                   </div>
+                                              
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+{foreach from=$lang.compare_js item=item key=key}
+{if $key neq 'button_compare'}
+var {$key} = "{$item}";
+{else}
+var button_compare = '';
+{/if}
+{/foreach}
+var compare_no_goods = "{$lang.compare_no_goods}";
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+</script>
+<script type="text/javascript">
+if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
+{
+    document.getElementById('history_div').style.display='none';
+}
+else
+{
+    document.getElementById('history_div').style.display='block';
+}
+function clear_history()
+{
+Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+}
+function clear_history_Response(res)
+{
+document.getElementById('history_list').innerHTML = '{$lang.no_history}';
+}
+</script>

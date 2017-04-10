@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/index/model/User.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Admin.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/model/User.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/regist/regist.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/controller/Login.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/cart/xiugai.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/product/product-list.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Member.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/cart/flow1.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Index.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/product/product-add.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Article.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/model/Admin.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/User.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Base.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Product.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/index/view/index/ajaxindex.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/goods/order.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/controller/Cart.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/System.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/login/login.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/cart/flow2.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/index/view/index/wxpay.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/product/product-edit.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Charts.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/goods/goods.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/product/product-brand.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/index/login.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/article/article-list.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/admin/admin-add.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/goods/list.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/admin/admin-permission.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/admin/admin-list.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/controller/Regist.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Login.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/index/controller/Index.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/Public/minheader.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/controller/Goods.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/index/controller/Test.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/controller/Index.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/index/welcome.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Home/view/Public/header.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/view/index/index.html</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Picture.php</file>
+            <file>file:/D:/wamp/apache2/htdocs/tp5/application/Admin/controller/Role.php</file>
+        </group>
+    </open-files>
+</project-private>

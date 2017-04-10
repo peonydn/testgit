@@ -1,0 +1,29 @@
+<div>
+    
+    <ul>
+        {foreach $list as $v}
+        <li>姓名：{$v.username}</li>
+        {/foreach}
+    </ul>
+    <?php for($i=1;$i<total;$i++):?>
+    <?php if($page==$i):?>
+    <a style="border:1px solid red;padding: 5px 10px;background: red;"><?php echo $i;?></a>
+    <?php else:?>
+    <a style="border:1px solid red;padding: 5px 10px;"><?php echo $i;?></a>
+    <?php endif;?>
+    <?php endfor;?>
+</div>    
+    <script>
+        $("a").click(function(){
+        var page = $(this).data('p');  //标签属性 参数的值 data-XX  p相当于后面的内容(XX)
+//        alert(p);
+        $,ajax({
+            url:"/index/index/ajaxindex/p/"+p,
+            data:{},
+            success:function (data){
+                alert(data);
+            }
+        })
+    });
+        
+    </script>
